@@ -23,7 +23,7 @@ SELECT COUNT(*) AS n_dipartimenti FROM departments;
 SELECT COUNT(*) AS numero_insegnanti_senza_telefono FROM teachers WHERE phone IS NULL;
 
 --9. Contare quanti iscritti ci sono stati ogni anno
-
+SELECT YEAR(enrolment_date) AS anno_iscrizione, COUNT(*) AS numero_iscritti FROM students GROUP BY YEAR(enrolment_date) ORDER BY anno_iscrizione;
 
 --10. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
