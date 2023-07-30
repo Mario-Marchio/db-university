@@ -26,7 +26,7 @@ SELECT COUNT(*) AS numero_insegnanti_senza_telefono FROM teachers WHERE phone IS
 SELECT YEAR(enrolment_date) AS anno_iscrizione, COUNT(*) AS numero_iscritti FROM students GROUP BY YEAR(enrolment_date) ORDER BY anno_iscrizione;
 
 --10. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
-
+SELECT office_address, COUNT(*) AS numero_insegnanti FROM teachers GROUP BY office_address;
 
 --11. Calcolare la media dei voti di ogni appello d'esame
 
