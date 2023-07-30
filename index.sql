@@ -20,7 +20,7 @@ SELECT * FROM degrees WHERE name LIKE '%magistrale%';
 SELECT COUNT(*) AS n_dipartimenti FROM departments;
 
 --8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
-
+SELECT COUNT(*) AS numero_insegnanti_senza_telefono FROM teachers WHERE phone IS NULL;
 
 --9. Contare quanti iscritti ci sono stati ogni anno
 
